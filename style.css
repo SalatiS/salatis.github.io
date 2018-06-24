@@ -1,0 +1,129 @@
+#page {padding: 30px 80px 30px 80px;}
+body {background-color:#FFEBCD;
+font-family:'Times';
+font: 14pt serif;}
+header .logo img {margin:28px 0px 0px 28px; height:100px;}
+.menu {
+    margin: 0;
+    padding: 0;
+    background: rgba(192, 192, 192, 0.3);
+    border: 2px solid #696969;
+    border-radius: 20px 5px;
+    width: 100%;
+    display:table;
+}
+.menu li{
+    display: table-cell;
+    font: 13pt serif;
+    float: none;
+}
+.menu li a{
+    padding: 10px;
+    text-decoration: none;
+    text-align:center;
+    text-transform: uppercase;
+    display: block;
+    color: white;   
+}
+.menu li a:hover {
+    background: rgba(192, 192, 192, 0.3);
+}
+#v a:hover{
+    background: rgba(192, 192, 192, 0.3);
+    border-radius: 17px 0px 0px 0px;
+}
+#c a:hover{
+    background: rgba(192, 192, 192, 0.3);
+    border-radius: 0px 0px 17px 0px;
+}
+h1 {
+    text-align: center;
+    margin-top: 65px;
+}
+.spr {	
+	overflow: auto;
+	width: 14%;
+    max-height: 450px;
+	height: inherit;
+    font-family:'Times';
+    float: right;	
+    margin-left: 20px;
+	margin-bottom: 100%;
+    padding: 20px 10px 20px 10px;
+    text-align: center;
+    background-color: rgba(192, 192, 192, 0.8);
+    border: 4px groove #F5DEB3;
+}
+.spr:first-letter {
+    font-size: 150%;
+}
+div {
+    text-align: justify;
+}
+a {
+    text-decoration: none;
+}
+li {
+    margin: 15px;
+    margin-left: -20px;
+}
+pre {
+    font-size: 11pt;
+}
+.ctg {
+    color: #008000;
+}
+.ctr {
+    color: #D2413A;
+	
+}
+.ctr1 {
+color: #D2413A;
+	font-weight: bold;
+	
+}
+.ctp {
+    color: #AA22FF;
+}
+.ctdg {
+    color:#408080;
+}
+.ctb {
+    color:#0000FF;
+}
+.footer {
+    position:fixed;
+    bottom: 0px;
+    width: 10000px;
+    height: 30px;
+    background-color: rgba(192, 192, 192, 0.3);
+    border: 4px groove #696969;
+    margin-left: -90px;
+    padding-left: 30px;
+}
+.footer:visited {
+    color: black;
+}
+.footer:active {
+    color: black;
+}
+.footer1 {
+    position:fixed;
+    bottom: 0px;
+    width: 10000px;
+    height: 30px;
+    background-color: rgba(192, 192, 192, 0.3);
+    border: 4px groove #696969;
+    margin-left: -90px;
+    padding-left: 30px;
+}
+.footer1:visited {
+    color: white;
+}
+.footer1:active {
+    color: #696969;
+}
+
+.i1{
+color: white;
+}

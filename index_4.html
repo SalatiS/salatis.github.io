@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+    <html>
+        <head>
+            <title>Python - Пример кода</title>
+            <link rel="stylesheet" href="style.css" type="text/css">
+        </head>
+		<style>
+            body {
+                background-image: url(images/bg4.png);
+                background-color: #696969;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+				text-shadow: red 0 0 1.5px;
+            }
+        </style>
+        <body id="page">
+            <header>
+                <a href="index.html" class="logo"><img src = "images/logo.png" alt="А картинки то и нет!"></a>
+            </header>
+            <p>
+            <ul class="menu">
+                <li id="v"><a href="index_1.html">История</a></li>
+                <li><a href="index_2.html">Преимущества</a></li>
+                <li><a href="index_3.html">Философия</a></li>
+                <li id="c"><a href="index_4.html">Пример программы</a></li>
+            </ul>
+            </p>
+            <h1>Пример кода на языке программирования PHP</h1>
+            <div class="spr">
+                 PHP: препроцессор гипертекста»; первоначально Personal Home Page Tools — «Инструменты для создания персональных веб-страниц») — скриптовый язык общего назначения, интенсивно применяемый для разработки веб-приложений. В настоящее время поддерживается подавляющим большинством хостинг-провайдеров и является одним из лидеров среди языков, применяющихся для создания динамических веб-сайтов</a>
+            </div>
+            <div>
+                <b>Нахождение 10 наиболее частых слов на web странице</b>
+                <p>Данный пример чисто демонстрационный, так как его можно значительно улучшить.</p>
+                <pre><span class="ctg">from</span> <span class="ctb">urllib2</span> <span class="ctg">import</span> urlopen         <span class="ctdg"># из модуля urllib2 импортируем функцию urlopen</span>
+
+u = urlopen(<span class="ctr">"http://python.org"</span>)     <span class="ctdg"># открываем URL на чтение</span>
+words = {}                           <span class="ctdg"># связываем имя words с пустым словарём</span>
+                                     <span class="ctdg"># (словарь — неупорядоченный [[ассоциативный массив]])</span>
+<span class="ctg">for</span> line <span class="ctp">in</span> u:           <span class="ctdg"># читаем u по строкам</span>
+    line = line.strip( <span calass="ctr">" \n"</span>)     <span calass="ctdg"># отбрасываем начальные и конечные пробелы</span>
+     <span class="ctg">for</span> word  <span class="ctp">in</span> line.split( <span class="ctr">" "</span>): <span calss="ctdg"># режем каждую строку на слова, ограниченные пробелами</span>
+        <span class="ctg">try</span>:                             <span class="ctdg"># блок обработки исключений</span>
+            words[word] += 1             <span class="ctdg"># пытаемся увеличить words[word] на единицу</span>
+         <span class="ctg">except</span>  <span class="ctr1">KeyError</span>:                 <span class="ctdg"># если не получилось (раньше words[word] не было)</span>
+            words[word] = 1              <span class="ctdg"># присваиваем единицу</span>
+
+ <span class="ctdg"># теперь словарь words содержит частоту встречаемости каждого слова.</span>
+ <span class="ctdg"># Например, words может содержать {"яблоко":5, "апельсин": 12, "груша": 8}</span>
+
+pairs = words.items()                <span class="ctdg"># делаем из словаря список пар</span>
+                                    # pairs == [("яблоко",5), ("апельсин",12), ("груша",8)]
+pairs.sort(key= <span class="ctg">lambda</span> x: x[1], reverse= <span class="ctg">True</span>)   <span class="ctdg"># сортируем по убыванию второго элемента пары</span>
+
+ <span class="ctg">for</span> p  <span class="ctr">in</span> pairs[:10]:                 <span class="ctdg"># печатаем первые 10 элементов списка</span>
+     <span class="ctg">print</span> p[0], p[1]</pre>
+            </div>
+            <footer>
+                <a href ="../lab2/Lab2.html" class="footer"> &copy; Новицкий Никита Андреевич</a>
+            </footer>
+        </body>
+    </html>
